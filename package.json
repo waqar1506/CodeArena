@@ -1,0 +1,21 @@
+{
+  "name": "codearena",
+  "version": "1.0.0",
+  "description": "CodeArena - Online Coding Judge",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "seed": "node server/seed.js",
+    "reset": "node server/seed.js --reset",
+    "test:api": "node test/api.test.mjs",
+    "test:ui": "node test/frontend.test.mjs",
+    "test": "node test/api.test.mjs && node test/frontend.test.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "jsdom": "^30.1.2"
+  }
+}
